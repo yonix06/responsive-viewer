@@ -67,10 +67,10 @@ const AppBar = () => {
         <Stack spacing={1} direction="row">
           <Button
             color="primary"
-            href="https://ko-fi.com/skmail"
+            href="https://saint-jean-cap-ferrat.fr"
             target="_blank"
           >
-            Buy me a coffee
+            Mairie de Saint-Jean-Cap-Ferrat
           </Button>
 
           <IconButton
@@ -87,7 +87,7 @@ const AppBar = () => {
             href="https://github.com/yonix06/responsive-viewer"
             target="_blank"
             edge="end"
-            aria-label="Star on github"
+            aria-label="Voir le projet sur GitHub"
             aria-haspopup="true"
             color="inherit"
           >
