@@ -18,7 +18,6 @@ import LoadingScreen from './LoadingScreen'
 import Notifications from './Notifications'
 import ScreenshotBlocker from './ScreenshotBlocker'
 import { styled } from '@mui/material/styles'
-import LocalWarning from './LocalWarning'
 
 const Root = styled('div')(({ theme }) => ({
   overflow: 'hidden',
@@ -48,7 +47,6 @@ function App() {
       <UserAgentDialog />
 
       <HelpDialog />
-      <LocalWarning />
       <AppBar />
       <Draw />
 

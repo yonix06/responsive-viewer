@@ -4,7 +4,9 @@ const clean = (url: string) => String(url).replace(/^\/|\/$/g, '')
 
 export const isLocal = (url: string) =>
   String(url).startsWith('chrome://') ||
-  String(url).startsWith('chrome-extension://')
+  String(url).startsWith('chrome-extension://') ||
+  String(url).startsWith('http://') ||
+  String(url).startsWith('https://')
 
 export const isExtension = (url: string) => {
   return (

@@ -43,8 +43,8 @@ const renderHighlight = (rect: DOMRect) => {
   highlightElement.style.height = withUnit(rect.height)
   highlightElement.style.top = withUnit(rect.top)
   highlightElement.style.left = withUnit(rect.left)
-  highlightElement.style.outline = '2px dashed #FFC400'
-  highlightElement.style.background = 'rgba(255, 196, 0,0.4)'
+  highlightElement.style.outline = '2px dashed #44b4f5'
+  highlightElement.style.background = 'rgba(68, 180, 245,0.4)'
   highlightElement.style.position = 'fixed'
   highlightElement.style.zIndex = '9002'
 
