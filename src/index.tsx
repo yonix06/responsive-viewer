@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './containers/App'
+import Root from './containers/Root'
 import theme from './theme'
 import { ThemeProvider } from '@mui/material/styles'
 import CssBaseline from '@mui/material/CssBaseline'
@@ -15,7 +15,7 @@ ReactDOM.render(
   <ThemeProvider theme={theme}>
     <Provider store={store}>
       <CssBaseline />
-      <App />
+      <Root />
     </Provider>
   </ThemeProvider>,
   document.getElementById('RESPONSIVE-VIEWER-ROOT')
