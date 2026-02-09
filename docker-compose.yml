@@ -1,0 +1,10 @@
+services:
+  responsiveviewer:
+    image: responsiveviewer
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 32000:3000
