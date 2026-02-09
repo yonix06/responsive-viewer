@@ -2,7 +2,6 @@ import React from 'react'
 import Box, { BoxProps } from '@mui/material/Box'
 import Screens from './Screens'
 import Toolbar from './Toolbar'
-import Advertisement from '../Advertisement'
 import { styled, darken, lighten } from '@mui/material/styles'
 import { useAppSelector } from '../../hooks/useAppSelector'
 import { selectDrawer } from '../../reducers/layout'
@@ -25,8 +24,6 @@ const Sidebar = () => {
   const open = useAppSelector(selectDrawer)
   return (
     <Drawer open={open}>
-      {open && <Advertisement />}
-
       <Toolbar direction={open ? 'row' : 'column'} />
 
       <Screens view={open ? 'list' : 'popover'} />

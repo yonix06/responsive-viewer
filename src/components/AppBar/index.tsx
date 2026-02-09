@@ -74,7 +74,7 @@ const AppBar = () => {
           </Button>
 
           <IconButton
-            href="https://twitter.com/SolaimanKmail"
+            href="https://twitter.com/yonix06"
             target="_blank"
             edge="end"
             aria-label="Follow me on twitter"
@@ -84,7 +84,7 @@ const AppBar = () => {
             <TwitterIcon />
           </IconButton>
           <IconButton
-            href="https://github.com/skmail/responsive-viewer"
+            href="https://github.com/yonix06/responsive-viewer"
             target="_blank"
             edge="end"
             aria-label="Star on github"

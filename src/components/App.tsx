@@ -11,7 +11,7 @@ import Draw from './Draw'
 import { initialize } from '../reducers/app'
 import { useAppDispatch } from '../hooks/useAppDispatch'
 import { useAppSelector } from '../hooks/useAppSelector'
-import { selectDrawer, selectIsAppReady } from '../reducers/layout'
+import { selectIsAppReady } from '../reducers/layout'
 
 import Box from '@mui/material/Box'
 import LoadingScreen from './LoadingScreen'
@@ -19,7 +19,6 @@ import Notifications from './Notifications'
 import ScreenshotBlocker from './ScreenshotBlocker'
 import { styled } from '@mui/material/styles'
 import LocalWarning from './LocalWarning'
-import Advertisement from './Advertisement'
 
 const Root = styled('div')(({ theme }) => ({
   overflow: 'hidden',
@@ -37,8 +36,6 @@ function App() {
     dispatch(initialize())
   }, [dispatch])
 
-  const drawer = useAppSelector(selectDrawer)
-
   if (!initialized) {
     return <LoadingScreen />
   }
@@ -53,7 +50,6 @@ function App() {
       <HelpDialog />
       <LocalWarning />
       <AppBar />
-      {!drawer && <Advertisement fixed />}
       <Draw />
 
       <Box display="flex" overflow="hidden" flex={1}>
