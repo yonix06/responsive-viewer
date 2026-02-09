@@ -14,7 +14,7 @@ const AppLogo = (props: SVGAttributes<SVGElement>) => {
         width="299"
         height="199"
         rx="19.5"
-        fill="#F5C644"
+        fill="#44b4f5"
         stroke="#000"
         strokeWidth="21"
       />
@@ -24,7 +24,7 @@ const AppLogo = (props: SVGAttributes<SVGElement>) => {
         width="110"
         height="149"
         rx="19.5"
-        fill="#F5C644"
+        fill="#44b4f5"
         stroke="#000"
         strokeWidth="21"
       />
@@ -34,7 +34,7 @@ const AppLogo = (props: SVGAttributes<SVGElement>) => {
         width="59"
         height="109"
         rx="19.5"
-        fill="#F5C644"
+        fill="#44b4f5"
         stroke="#000"
         strokeWidth="21"
       />
