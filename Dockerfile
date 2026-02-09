@@ -21,7 +21,7 @@ COPY --from=builder /usr/src/app/package-lock.json ./package-lock.json
 COPY --from=builder /usr/src/app/webpack.config.js ./webpack.config.js
 COPY --from=builder /usr/src/app/public ./public
 COPY --from=builder /usr/src/app/scripts ./scripts
-RUN npm run build:manifest
+RUN npm run build:manifest:local
 # RUN chown -R node /usr/src/app
 EXPOSE 3000
 # USER node

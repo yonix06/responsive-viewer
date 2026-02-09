@@ -45,6 +45,7 @@
     "build": "REACT_APP_PLATFORM=CHROME node ./scripts/build.js",
     "build:local": "REACT_APP_PLATFORM=LOCAL node ./scripts/build.js",
     "build:manifest": "cp ./public/manifest.json ./build/manifest.json",
+    "build:manifest:local": "cp ./public/manifest.web.json ./build/manifest.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "pretty": "prettier --check 'src/**/*.ts' --write",

@@ -76,7 +76,17 @@ const Iframe = ({ id }: Props) => {
     if (frameStatus === FrameStatus.IDLE && !isLocal) {
       return `about:blank?screenId=${screen.id}`
     }
-    return selectUrl(state)
+    const rawUrl = selectUrl(state)
+    // In LOCAL mode, route external URLs through the proxy to strip
+    // X-Frame-Options / CSP headers that block iframe loading
+    if (
+      isLocal &&
+      rawUrl &&
+      (rawUrl.startsWith('http://') || rawUrl.startsWith('https://'))
+    ) {
+      return `/proxy?url=${encodeURIComponent(rawUrl)}`
+    }
+    return rawUrl
   })
 
   useEffect(() => {
