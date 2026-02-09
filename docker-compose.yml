@@ -8,4 +8,4 @@ services:
       NODE_ENV: production
       REACT_APP_PLATFORM: LOCAL
     ports:
-      - 32000:3000
+      - 3000:3000
