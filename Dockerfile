@@ -23,5 +23,4 @@ COPY --from=builder /usr/src/app/package.json ./package.json
 COPY --from=builder /usr/src/app/package-lock.json ./package-lock.json
 COPY --from=builder /usr/src/app/public ./public
 EXPOSE 3000
-USER node
 CMD ["npm", "run", "start"]
